@@ -1,5 +1,9 @@
 import './Header.css';
 
 export default function Header() {
-  return <header>Character Builder App</header>;
+  return (
+    <header>
+      <h1>Character Builder App</h1>
+    </header>
+  );
 }
