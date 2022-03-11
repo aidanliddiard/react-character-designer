@@ -1,6 +1,6 @@
 import './Display.css';
 
-export default function Display({ head, middle }) {
+export default function Display({ head, middle, bottom }) {
   return (
     <div className="right">
       <div className="character">
@@ -14,7 +14,11 @@ export default function Display({ head, middle }) {
           id="middle"
           style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/${middle}-middle.png)` }}
         ></div>
-        <div className="bg bottom" id="bottom"></div>
+        <div
+          className="bg bottom"
+          id="bottom"
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/${bottom}-pants.png)` }}
+        ></div>
       </div>
     </div>
   );

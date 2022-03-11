@@ -1,6 +1,6 @@
 import './Controls.css';
 
-export default function Controls({ setHead, setMiddle }) {
+export default function Controls({ setHead, setMiddle, setBottom }) {
   return (
     <div className="left">
       <div className="picker">
@@ -24,7 +24,7 @@ export default function Controls({ setHead, setMiddle }) {
         </label>
         <label>
           Bottom
-          <select id="bottom-dropdown">
+          <select id="bottom-dropdown" onChange={(e) => setBottom(e.target.value)}>
             <option value="leg">Single Leg</option>
             <option value="white">White Pants</option>
             <option value="blue">Blue Jeans</option>
