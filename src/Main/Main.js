@@ -9,7 +9,7 @@ export default function Main() {
   const [head, setHead] = useState('bird');
   const [middle, setMiddle] = useState('blue');
   const [bottom, setBottom] = useState('leg');
-  const [catchphrases, setCatchphrases] = useState('');
+  const [catchphrases, setCatchphrases] = useState([]);
   const [catchphrase, setCatchphrase] = useState('');
 
   return (
