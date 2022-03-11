@@ -6,11 +6,12 @@ import Display from '../Display/Display';
 
 export default function Main() {
   const [head, setHead] = useState('bird');
+  const [middle, setMiddle] = useState('blue');
 
   return (
     <main>
-      <Controls setHead={setHead} />
-      <Display head={head} />
+      <Controls setHead={setHead} setMiddle={setMiddle} />
+      <Display head={head} middle={middle} />
     </main>
   );
 }

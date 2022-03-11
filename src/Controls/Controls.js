@@ -1,12 +1,12 @@
 import './Controls.css';
 
-export default function Controls({ setHead }) {
+export default function Controls({ setHead, setMiddle }) {
   return (
     <div className="left">
       <div className="picker">
         <label>
           Head
-          <select id="head-dropdown" onChange= {(e) => setHead(e.target.value)}>
+          <select id="head-dropdown" onChange={(e) => setHead(e.target.value)}>
             <option value="bird">Bird</option>
             <option value="duck">Duck</option>
             <option value="dog">Dog</option>
@@ -15,7 +15,7 @@ export default function Controls({ setHead }) {
         </label>
         <label>
           Middle
-          <select id="middle-dropdown">
+          <select id="middle-dropdown" onChange={(e) => setMiddle(e.target.value)}>
             <option value="blue">Blue</option>
             <option value="dress">Fancy</option>
             <option value="pink">Pink</option>
