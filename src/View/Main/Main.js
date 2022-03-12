@@ -1,9 +1,9 @@
 import './Main.css';
 import { useState } from 'react';
 
-import Controls from '../Controls/Controls';
-import Display from '../Display/Display';
-import Catchphrases from '../Catchphrases/Catchphrases';
+import Controls from '../../Presentational/Controls/Controls';
+import Display from '../../Presentational/Display/Display';
+import Catchphrases from '../../Presentational/Catchphrases/Catchphrases';
 
 export default function Main() {
   const [head, setHead] = useState('bird');

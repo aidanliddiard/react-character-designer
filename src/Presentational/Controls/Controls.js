@@ -30,11 +30,6 @@ export default function Controls({ setHead, setMiddle, setBottom }) {
             <option value="blue">Blue Jeans</option>
           </select>
         </label>
-        <label>
-          Add a catch phrase
-          <input id="catchphrase-input" />
-          <button id="catchphrase-button">Add</button>
-        </label>
       </div>
     </div>
   );
